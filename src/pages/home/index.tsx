@@ -82,17 +82,18 @@ const Home: React.FC = () => {
   const filteredData = useMemo(() => {
     if (!data) return [];
     return data.filter((item) => {
-      let isMatch = true;
+      let isSearchMatch = true;
+      let isPopulationMatch = true;
       if (search) {
-        isMatch = item.name.toLowerCase().includes(search.toLowerCase());
+        isSearchMatch = item.name.toLowerCase().includes(search.toLowerCase());
       }
 
       if (population) {
         const [min, max] = population.split("-").map(Number);
-        isMatch = item.population >= min && item.population < max;
+        isPopulationMatch = item.population >= min && item.population < max;
       }
 
-      return isMatch;
+      return isSearchMatch && isPopulationMatch;
     });
   }, [data, search, population]);
 
