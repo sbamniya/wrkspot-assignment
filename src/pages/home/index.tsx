@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from "react";
 
-import Table from "@/components/Loader/Table";
+import Table from "@/components/Table";
 import useDebounce from "@/hooks/useDebounce";
 import { createColumnHelper } from "@tanstack/react-table";
 

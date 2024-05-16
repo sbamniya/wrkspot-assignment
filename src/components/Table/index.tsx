@@ -1,10 +1,10 @@
 import {
-    ColumnDef,
-    flexRender,
-    getCoreRowModel,
-    useReactTable,
+  ColumnDef,
+  flexRender,
+  getCoreRowModel,
+  useReactTable,
 } from "@tanstack/react-table";
-import Loader from "..";
+import Loader from "../Loader";
 
 function Table<T>({
   data,
