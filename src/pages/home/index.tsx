@@ -19,7 +19,7 @@ const Home: React.FC = () => {
   const columns = useMemo(() => {
     const columnHelper = createColumnHelper<Country>();
 
-    const columns = [
+    return [
       columnHelper.accessor((row) => `${row.name}`, {
         id: "name",
         header: "Country Name",
@@ -66,7 +66,6 @@ const Home: React.FC = () => {
         },
       }),
     ];
-    return columns;
   }, []);
 
   const onSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
