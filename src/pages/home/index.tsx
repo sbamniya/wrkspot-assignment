@@ -103,6 +103,9 @@ const Home: React.FC = () => {
 
   return (
     <>
+      <h1 className="text-left text-xl font-semibold text-gray-800 mb-6">
+        Countries Info
+      </h1>
       <div className="grid gap-6 mb-6 md:grid-cols-4 items-center">
         <div>
           <input
@@ -127,12 +130,13 @@ const Home: React.FC = () => {
           </select>
         </div>
         <div>
-        <span
-          onClick={reset}
-          className="underline cursor-pointer text-blue-700"
-        >
-          Clear
-        </span></div>
+          <span
+            onClick={reset}
+            className="underline cursor-pointer text-blue-700"
+          >
+            Clear
+          </span>
+        </div>
         <button
           type="button"
           className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2"
