@@ -127,7 +127,7 @@ const Home: React.FC = () => {
             <option value="0-1000000">{"< "} 1M</option>
             <option value="1000001-5000000">{"< "} 5M</option>
             <option value="5000001-10000000">{"< "} 10M</option>
-            <option value={`10000000-${Number.MAX_SAFE_INTEGER}`}>10M+</option>
+            <option value={`10000001-${Number.MAX_SAFE_INTEGER}`}>10M+</option>
           </select>
         </div>
         <div>
